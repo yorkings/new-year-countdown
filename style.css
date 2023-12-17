@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    background-image: url("pp2.webp");
+    color: #ffffff;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+.head{
+ margin: 0 auto;
+ margin-bottom: 5px;
+}
+.count {
+    text-transform: uppercase; 
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em; 
+    color: #ffffff; 
+}
+
+.container {
+    display: flex;
+    place-items: center;
+}
+.container{
+    display: flex;
+    place-items: center;
+
+    
+}
+@keyframes happy {
+   0% { 
+    background-image: url('happy3.webp');
+    }
+    50% {
+        background-image: url('happy.webp');
+    }
+    100% {
+        background-image: url('happy2.webp');
+    }
+}
+.container .countdown-container{
+    display: flex;
+    border: 2px solid transparent;
+    background-color: white;
+    animation-name: happy;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: relative;
+    height:40vh;
+    width:90vh;
+    place-items: center;
+    border-radius: 20px;   
+}
+
+.hours{
+    padding: 10px;
+    display: inline;
+    font-size: 1em;
+
+}
+.hours span{
+    font-size: 3em;
+    font-weight: 400;
+    float:left;
+    color: #001900;
+   
+} 
+.big-text {
+    height: 15vh;
+    width: 15vh;
+    background-image: linear-gradient(to right, #e7553b 30%, #ff0000 50%);
+    border: 2px solid transparent;
+    padding: 20px;
+    float: left;
+    font: 1.8em Tahoma;
+    border-radius: 20px;
+    animation-name: starter;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-direction: alternate; /* Change this to alternate */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; /* Correct spelling */
+}
+
+@keyframes starter {
+    0% {
+        background-image: url("b12.webp"); 
+        color:rgb(184, 241, 170);
+    }
+    50% {
+        background-image: url("bl8.webp");
+        color: #c5b1b1; 
+    }
+    100% {
+        background-image: url("pp2.webp"); 
+        color:rgb(252, 114, 63);
+    }
+}
